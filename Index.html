@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WHO Assessment (Prototype)</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Find your values, pillars, ideal emotion, and triggers. Free WHO Assessment prototype." />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">WHO</div>
+      <div>
+        <div class="title">WHO Assessment</div>
+        <div class="subtitle">Values • Pillars • Ideal Emotion • Triggers</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a class="navlink" href="http://MyWHOthoughts.com" target="_blank" rel="noopener">Back to MyWHOthoughts.com</a>
+      <button id="resetBtn" class="btn btn-ghost" type="button">Reset</button>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="card hero">
+      <h1>Make your WHO obvious.</h1>
+      <p>
+        This is a free prototype to help you identify what matters, what you’re building, how you want to feel,
+        and what tends to derail you.
+      </p>
+      <div class="hero-actions">
+        <button id="startBtn" class="btn btn-primary" type="button">Start assessment</button>
+        <a class="btn btn-ghost" href="#how" aria-label="How it works">How it works</a>
+      </div>
+    </section>
+
+    <section id="app" class="card app" hidden>
+      <div class="progress">
+        <div class="progress-bar"><div id="progressFill" class="progress-fill"></div></div>
+        <div id="progressText" class="progress-text">Step 1 of 4</div>
+      </div>
+
+      <div id="stepHost"></div>
+
+      <div class="controls">
+        <button id="backBtn" class="btn btn-ghost" type="button">Back</button>
+        <button id="nextBtn" class="btn btn-primary" type="button">Next</button>
+      </div>
+    </section>
+
+    <section id="results" class="card results" hidden>
+      <div class="results-header">
+        <h2>Your WHO Snapshot</h2>
+        <div class="results-actions">
+          <button id="editBtn" class="btn btn-ghost" type="button">Edit answers</button>
+          <button id="copyBtn" class="btn btn-primary" type="button">Copy summary</button>
+        </div>
+      </div>
+
+      <div id="resultsBody" class="results-body"></div>
+
+      <div class="cta">
+        <div>
+          <h3>Want the full experience?</h3>
+          <p>Go to the main site for deeper prompts, weekly check-ins, and future features.</p>
+        </div>
+        <a class="btn btn-primary" href="http://MyWHOthoughts.com" target="_blank" rel="noopener">Visit MyWHOthoughts.com</a>
+      </div>
+    </section>
+
+    <section id="how" class="card how">
+      <h2>How it works</h2>
+      <ol>
+        <li><b>Values</b>: Choose your top values (what you refuse to violate).</li>
+        <li><b>Pillars</b>: Define the few areas that keep your life stable.</li>
+        <li><b>Ideal Emotion</b>: Pick how you want to feel most days.</li>
+        <li><b>Triggers</b>: Identify what throws you off and what you can do about it.</li>
+      </ol>
+      <p class="muted">Prototype note: everything is stored locally in your browser only.</p>
+    </section>
+
+    <footer class="footer">
+      <span class="muted">Prototype • Built for GitHub Pages</span>
+      <a class="muted" href="http://MyWHOthoughts.com" target="_blank" rel="noopener">MyWHOthoughts.com</a>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
