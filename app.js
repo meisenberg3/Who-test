@@ -26,7 +26,7 @@ const DEFAULTS = {
 
   // Trigger
   triggerStatement: "", // "I'm not ____"
-  triggerPlan: "",      // what to do when it shows up
+  triggerPlan: "",      // what to do when it shows up (Pause. Ponder why the Trigger was activated. Then pivot to your best self and select one of your Pillars as a jacket to manage the challenge.)
 };
 
 const VALUE_OPTIONS = [
