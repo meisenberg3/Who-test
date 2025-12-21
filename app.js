@@ -26,7 +26,7 @@ const DEFAULTS = {
 
   // Trigger
   triggerStatement: "", // "I'm not ____"
-  triggerPlan: "",      // what to do when it shows up (Pause. Ponder. Pivot. Pause and breathe. Ponder why the Trigger was activated. Then Pivot to your WHO and wear those words a jacket to manage the challenge.)
+  triggerPlan: "",      // what to do when it shows up (Pause. Ponder. Pivot. Pause and breathe. Ponder why the Trigger was activated. Then Pivot and wear your WHO words as a jacket to manage the challenge.)
 };
 
 const VALUE_OPTIONS = [
@@ -599,7 +599,7 @@ function renderTriggerStep(){
 
   wrap.innerHTML = `
     <h2>Trigger (Anti-WHO)</h2>
-    <p>Your Trigger is the loud inner critic story that makes you feel demoralized: <b>“I’m not ___.”</b> Naming it gives you power to notice it and choose to feed the posiitve WHO thoughts.</p>
+    <p>Your Trigger is the loud inner critic story that makes you feel demoralized: <b>“I’m not ___.”</b> Naming it gives you power to notice it and choose to feed the positive WHO thoughts.</p>
 
     <div class="block">
       <div class="field">
