@@ -539,7 +539,7 @@ function renderIdealEmotionStep(){
       </div>
 
       <div class="field">
-        <label>How much do you want to feel your Ideal Emotion (realitically)? (1–10)</label>
+        <label>How much do you want to feel your Ideal Emotion (be realistic)? (1–10)</label>
         <input id="emotionLevel" type="range" min="1" max="10" value="${Number(state.emotionLevel || 8)}" />
         <div class="help">Current: <b id="emotionLevelLabel">${Number(state.emotionLevel || 8)}</b></div>
       </div>
@@ -554,9 +554,9 @@ function renderIdealEmotionStep(){
     <div class="block">
       <h3>Quick alignment check</h3>
       <div class="kv">
-        When you’re not at your target level, ask:
+        When you are living your Values and being your Pillars, you automatically feel your Ideal Emotion. So, when you’re not at your target level, ask:
         <br/>• Which <b>Value</b> did I compromise? How do I realign with my Values?
-        <br/>• Which <b>Pillar</b> did I stop embodying? What action can I do (self-care or do something for someone) to feed my Pillars? 
+        <br/>• Which <b>Pillar</b> am I not embodying to my norm? What action can I do (self-care or do something for someone) to feed my Pillars? 
       </div>
     </div>
   `;
