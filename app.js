@@ -152,19 +152,19 @@ function renderValuesPromptsStep(){
       <h3>Prompt A: Proud Moment</h3>
       <div class="field">
         <label>At any point in your life, when were you most proud of yourself?</label>
-        <textarea id="proudMoment" placeholder="Example: a hard project, a personal change, standing up for someone...">${escapeHtml(state.proudMoment || "")}</textarea>
+        <textarea id="proudMoment" placeholder="Example: a hard project, a personal change, standing up for yourself or someone...">${escapeHtml(state.proudMoment || "")}</textarea>
       </div>
       <div class="field">
         <label>Why were you proud?</label>
-        <textarea id="proudWhy" placeholder="List the reasons. This is where your Values show up.">${escapeHtml(state.proudWhy || "")}</textarea>
+        <textarea id="proudWhy" placeholder="List the reasons. List the Values that allowed you to accomplish the goal / gave you pride.">${escapeHtml(state.proudWhy || "")}</textarea>
       </div>
     </div>
 
     <div class="block">
       <h3>Prompt B: Upset / Anger / Frustrated Moment</h3>
       <div class="field">
-        <label>When were you most angry, frustrated, or furious (person or situation)?</label>
-        <textarea id="upsetMoment" placeholder="Example: disrespected, lied to, treated unfairly, ignored...">${escapeHtml(state.upsetMoment || "")}</textarea>
+        <label>When were you most angry, frustrated, or furious (person or situation)?. Values, when crossed, evoke an emotion.</label>
+        <textarea id="upsetMoment" placeholder="Example: disrespected, lied to, treated unfairly, told what to do, ignored...">${escapeHtml(state.upsetMoment || "")}</textarea>
       </div>
       <div class="field">
         <label>What exactly bothered you? (Why did the behavior bother you?)</label>
@@ -379,7 +379,7 @@ function renderPillarsStep(){
       <h3>Add Pillar candidates (traits)</h3>
       <div class="field">
         <label>Add a trait (press Enter)</label>
-        <input id="customPillarTrait" type="text" placeholder="Example: Playful, Calm, Bold, Curious, Grounded..." />
+        <input id="customPillarTrait" type="text" placeholder="Example: Community, Passion, Problem Solver, Service, Connected, Builder, Optimist, Creative, Present, Earthy, Playful, Calm, Bold, Curious, Grounded..." />
       </div>
 
       <div class="field">
