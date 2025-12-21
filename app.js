@@ -1,4 +1,4 @@
-const MAIN_SITE = "http://MyWHOthoughts.com";
+const MAIN_SITE = "https://MyWHOthoughts.com";
 const STORAGE_KEY = "who_assessment_v2_dana";
 
 const DEFAULTS = {
@@ -37,7 +37,6 @@ const VALUE_OPTIONS = [
 
 
 const PILLAR_OPTIONS = [
-[
   "Adventurer","Bold","Builder","Caretaker","Community","Compassion","Confident","Connection","Connector"
   "Considerate","Creative","Earthy","Explorer","Faith","Family","Fierce","Fun","Goofy","Grounded","Gratitude","Helper","Humor","Introspectove","Impact",
   "Kind","Laughter","Limitless","Listener","Love","Nerdy","Open Mind","Optimist","Passion","Patient","Peace","Playful"
@@ -380,7 +379,13 @@ function renderPillarsStep(){
 
   wrap.innerHTML = `
     <h2>Pillars (Discover)</h2>
-    <p>Pillars are your <b>core characteristics</b> when you’re the happiest and most “you.”</p>
+    <p>Pillars are your <b>core characteristics</b> when you’re the happiest and most “you.”  It is not tied to an accomplishment.</p>
+
+    <div class="block">
+      <h3>Build your candidate list (fast)</h3>
+      <p class="muted">Pick a few from the list OR add custom ones. We’ll road-test next step.</p>
+      <div class="pills" id="valuePills"></div>
+
 
     <div class="block">
       <h3>Prompt: Happiest / Best Self</h3>
