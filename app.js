@@ -554,7 +554,7 @@ function renderIdealEmotionStep(){
     <div class="field">
       <label>If you have two Ideal Emotions list the second one.</label>
       <input id="emotionWhy" type="text" placeholder="Example: Joy and Calm." value="${escapeHtml(state.emotionWhy || "")}" />
-      <div class="help">
+      <div class="help">Reflect</div>
     </div>
 
     <div class="block">
