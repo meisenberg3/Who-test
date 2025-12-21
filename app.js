@@ -179,7 +179,7 @@ function renderValuesPromptsStep(){
     <div class="block">
       <h3>Prompt B: Upset / Anger / Frustrated Moment</h3>
       <div class="field">
-        <label>When were you most angry, frustrated, or furious (person or situation)?. Values, when crossed, evoke an emotion.</label>
+        <label>When were you most angry, frustrated, or furious (person or situation)?. Values, when crossed, evoke an emotion (Example: you can have high integrity, but not get bothered if others do not have that quality. Integrity would not be a Value).</label>
         <textarea id="upsetMoment" placeholder="Example: disrespected, lied to, treated unfairly, told what to do, ignored...">${escapeHtml(state.upsetMoment || "")}</textarea>
       </div>
       <div class="field">
@@ -196,7 +196,7 @@ function renderValuesPromptsStep(){
       <div class="field">
         <label>Add a candidate Value (press Enter)</label>
         <input id="customValue" type="text" placeholder="Type a value and press Enter (e.g., Respect, Excellence, Honesty)" />
-        <div class="help">Goal: 5–12 candidates.</div>
+        <div class="help">Goal: 3–6 candidates. By identifying these candidates, you can more easily de-escalate your emotions.</div>
       </div>
 
       <div class="field">
