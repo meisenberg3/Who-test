@@ -41,9 +41,9 @@ const VALUE_OPTIONS = [
 
 const PILLAR_OPTIONS = [
   "Community","Connection","Builder","Problem Solver","Peace","Laughter","Fun","Creative",
-  "Kind","Goofy","Nerdy","Caretaker","Adventurer","Love","Impact","Service",
-  "Optimist","Compassion","Passion","Humor","Sarcastic","Faith","Helper", 
-  "Considerate","Present","Open Mind","Listner","Gratitude","Patient" 
+  "Kind","Goofy","Nerdy","Caretaker","Adventurer","Love","Impact","Service","Earthy"
+  "Optimist","Compassion","Passion","Humor","Sarcastic","Faith","Helper","Bold" 
+  "Considerate","Present","Open Mind","Listner","Gratitude","Patient",'Confident" 
 ];
 
 
