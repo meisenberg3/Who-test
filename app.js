@@ -382,12 +382,6 @@ function renderPillarsStep(){
     <p>Pillars are your <b>core characteristics</b> when you’re the happiest and most “you.”  It is not tied to an accomplishment.</p>
 
     <div class="block">
-      <h3>Build your candidate list (fast)</h3>
-      <p class="muted">Pick a few from the list OR add custom ones. We’ll road-test next step.</p>
-      <div class="pills" id="valuePills"></div>
-
-
-    <div class="block">
       <h3>Prompt: Happiest / Best Self</h3>
       <div class="field">
         <label>When were you your happiest and most YOU? (Where / with who / doing what?)</label>
