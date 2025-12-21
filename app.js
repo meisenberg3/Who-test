@@ -31,7 +31,7 @@ const DEFAULTS = {
 
 const VALUE_OPTIONS = [
   "Respect","Excellence","Justice","Transparency","Honesty","Empathy","Adventure","Curiosity",
-  "Kind","Independence,"Integrity","Structure","Self Reliance","Resilience","Impact","Service",
+  "Kind","Independence","Integrity","Structure","Self Reliance","Resilience","Impact","Service",
   "Authenticity","Fairness","Accountability","Reliability","Loyalty","Inclusivity","Do-er", 
   "Considerate","Perseverance","Open Mind","Efficient","Gratitude","Ethics" 
 ];
