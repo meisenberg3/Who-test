@@ -15,6 +15,7 @@ const DEFAULTS = {
 
   // PILLARS discovery
   happiestMoment: "",
+  pillarCandidates: [],          // raw candidates (strings)
   pillarCandidates: [],         // traits / characteristics
   pillarsFinal: [],             // after pillar road test YES (is pillar)
   movedToValuesFromPillars: [], // pillar road test anger YES -> value
@@ -35,6 +36,16 @@ const VALUE_OPTIONS = [
   "Authenticity","Fairness","Accountability","Reliability","Loyalty","Inclusivity","Do-er", 
   "Considerate","Perseverance","Open Mind","Efficient","Gratitude","Ethics" 
 ];
+
+};
+
+const PILLAR_OPTIONS = [
+  "Community","Connection","Builder","Problem Solver","Peace","Laughter","Fun","Creative",
+  "Kind","Goofy","Nerdy","Caretaker","Adventurer","Love","Impact","Service",
+  "Optimist","Compassion","Passion","Humor","Sarcastic","Faith","Helper", 
+  "Considerate","Present","Open Mind","Listner","Gratitude","Patient" 
+];
+
 
 const IDEAL_EMOTION_OPTIONS = [
   "Calm","Joy","Present","Energized","Grateful","Content","Freedom","Playful",
