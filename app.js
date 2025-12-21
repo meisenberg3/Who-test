@@ -399,7 +399,7 @@ function renderPillarsStep(){
 
     <div class="block">
       <h3>Pillar Road Test</h3>
-      <p class="muted">If someone crosses this chacteristic, do you get angry/frustrated/upset? If YES, it belongs in Values.</p>
+      <p class="muted">If someone crosses this characteristic, do you get angry/frustrated/upset? If YES, it belongs in Values.</p>
       <div id="pillarRoad"></div>
     </div>
 
@@ -527,7 +527,7 @@ function renderIdealEmotionStep(){
 
   wrap.innerHTML = `
     <h2>Ideal Emotion</h2>
-    <p>Your Ideal Emotion is what you want to feel each day. When you’re not feeling it, revisit Values + Pillars.</p>
+    <p>Your Ideal Emotion is what you want to feel each day. When you’re not feeling that emotion, revisit Values + Pillars to see where your are not aligned with the words that you selected.</p>
 
     <div class="grid">
       <div class="field">
@@ -539,7 +539,7 @@ function renderIdealEmotionStep(){
       </div>
 
       <div class="field">
-        <label>How much do you want to feel it? (1–10)</label>
+        <label>How much do you want to feel your Ideal Emotion (realitically)? (1–10)</label>
         <input id="emotionLevel" type="range" min="1" max="10" value="${Number(state.emotionLevel || 8)}" />
         <div class="help">Current: <b id="emotionLevelLabel">${Number(state.emotionLevel || 8)}</b></div>
       </div>
@@ -555,8 +555,8 @@ function renderIdealEmotionStep(){
       <h3>Quick alignment check</h3>
       <div class="kv">
         When you’re not at your target level, ask:
-        <br/>• Which <b>Value</b> did I compromise?
-        <br/>• Which <b>Pillar</b> did I stop embodying?
+        <br/>• Which <b>Value</b> did I compromise? How do I realign with my Values?
+        <br/>• Which <b>Pillar</b> did I stop embodying? What action can I do (self-care or do something for someone) to feed my Pillars? 
       </div>
     </div>
   `;
@@ -593,7 +593,7 @@ function renderTriggerStep(){
 
   wrap.innerHTML = `
     <h2>Trigger (Anti-WHO)</h2>
-    <p>Your Trigger is the loud inner critic story: <b>“I’m not ___.”</b> Naming it gives you power to notice it and return to your WHO.</p>
+    <p>Your Trigger is the loud inner critic story that makes you feel demoralized: <b>“I’m not ___.”</b> Naming it gives you power to notice it and choose to feed the posiitve WHO thoughts.</p>
 
     <div class="block">
       <div class="field">
@@ -602,7 +602,7 @@ function renderTriggerStep(){
       </div>
 
       <div class="field">
-        <label>When it shows up, what will I do instead? (simple plan)</label>
+        <label>When the Trigger thought shows up, what will I do to shift my mindset to focus on the Pillar words? (simple plan)</label>
         <textarea id="triggerPlan" placeholder="Example: Pause 10 seconds → pick 1 pillar → act for 2 minutes.">${escapeHtml(state.triggerPlan || "")}</textarea>
         <div class="help">Make it stupid-simple. You’re designing for your worst moment.</div>
       </div>
