@@ -26,7 +26,7 @@ const DEFAULTS = {
 
   // Trigger
   triggerStatement: "", // "I'm not ____"
-  triggerPlan: "",      // what to do when it shows up (Pause. Ponder. Pivot. Pause and breathe. Ponder why the Trigger was activated. Then Pivot and wear your WHO words as a jacket to manage the challenge.)
+  triggerPlan: "",      // what to do when it shows up -- Pause. Ponder. Pivot. (Pause and breathe. Ponder why the Trigger was activated. Then Pivot and wear your WHO words as a jacket to manage the challenge.)
 };
 
 const VALUE_OPTIONS = [
@@ -178,7 +178,7 @@ function renderValuesPromptsStep(){
     <div class="block">
       <h3>Prompt B: Upset / Anger / Frustrated Moment</h3>
       <div class="field">
-        <label>When were you most angry, frustrated, or furious (person or situation)?. Values, when crossed, evoke an emotion (Example: you can have high integrity, but not get bothered if others do not have that quality. Integrity would not be a Value).</label>
+        <label>When were you most angry, frustrated, or furious (person or situation)?.</label>
         <textarea id="upsetMoment" placeholder="Example: disrespected, lied to, treated unfairly, told what to do, ignored...">${escapeHtml(state.upsetMoment || "")}</textarea>
       </div>
       <div class="field">
@@ -268,7 +268,7 @@ function renderValuesRoadTestStep(){
     </div>
 
     <div class="block">
-      <h3>Road test each candidate</h3>
+      <h3>Road test each candidate. Values, when crossed, evoke an emotion. Example: you can have high integrity, but not get bothered if others do not have that quality. Integrity would not be considered a Value)</h3>
       <div id="roadList"></div>
       <div class="help">Tip: imagine someone close to you blatantly crossing your Value.</div>
     </div>
