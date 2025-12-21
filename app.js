@@ -39,16 +39,22 @@ const VALUE_OPTIONS = [
 const PILLAR_OPTIONS = [
 [
   "Adventurer","Bold","Builder","Caretaker","Community","Compassion","Confident","Connection",
-  "Considerate","Creative","Earthy","Faith","Fun","Goofy","Gratitude","Helper","Humor","Impact",
-  "Kind","Laughter","Listener","Love","Nerdy","Open Mind","Optimist","Passion","Patient","Peace",
+  "Considerate","Creative","Earthy","Explorer","Faith","Family","Fierce","Fun","Goofy","Gratitude","Helper","Humor","Introspectove","Impact",
+  "Kind","Laughter","Limitless","Listener","Love","Nerdy","Open Mind","Optimist","Passion","Patient","Peace",
   "Present","Problem Solver","Sarcastic","Service"
-]
 ];
 
 
 const IDEAL_EMOTION_OPTIONS = [
-  "Calm","Joy","Present","Energized","Grateful","Content","Freedom","Playful",
-  "Peace","Clear","Connected","Inspired","Carefree"
+  "Calm","Carefree","Clear","Connected","Content","Energized","Fulfilled","Freedom",
+  "Grateful","Gratitude","Happiness","Inspired","Joy","Peace","Playful",
+  "Present","Serenity"
+];
+
+
+const TRIGGER_OPTIONS = [
+  "Capable","Enough","Fast Enough","Good Enough","Heard","Listened to",
+  "Respected","Seen","Smart","Valued","Wanted"
 ];
 
 let state = loadState();
@@ -528,7 +534,7 @@ function renderIdealEmotionStep(){
 
   wrap.innerHTML = `
     <h2>Ideal Emotion</h2>
-    <p>Your Ideal Emotion is what you want to feel each day. When you’re not feeling that emotion, revisit Values + Pillars to see where your are not aligned with the words that you selected.</p>
+    <p>Your Ideal Emotion is what you want to feel each day (yes, it is ok to have 2 Ideal Emotions). When you’re not feeling that emotion, revisit your Values and Pillars to see where your are not aligned with the WHO words that you selected.</p>
 
     <div class="grid">
       <div class="field">
