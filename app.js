@@ -552,9 +552,9 @@ function renderIdealEmotionStep(){
     </div>
 
     <div class="field">
-      <label>Why that emotion?</label>
-      <input id="emotionWhy" type="text" placeholder="Because when I feel ___, I show up as ___." value="${escapeHtml(state.emotionWhy || "")}" />
-      <div class="help">One sentence is enough.</div>
+      <label>If you have two Ideal Emotions list the second one.</label>
+      <input id="emotionWhy" type="text" placeholder="Example: Joy and Calm." value="${escapeHtml(state.emotionWhy || "")}" />
+      <div class="help">
     </div>
 
     <div class="block">
@@ -714,7 +714,7 @@ function showResults(){
       <h3>Next step</h3>
       <div class="kv">
         Pick <b>one Value</b> and <b>one Pillar</b> to lead with this week.
-        <br/><span class="muted">If your Ideal Emotion dips, check what you compromised.</span>
+        <br/><span class="muted">If your Ideal Emotion dips, check what WHO words you compromised.</span>
       </div>
     </div>
   `;
