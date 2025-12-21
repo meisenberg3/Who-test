@@ -161,7 +161,7 @@ function renderValuesPromptsStep(){
 
   wrap.innerHTML = `
     <h2>Values (Discover)</h2>
-    <p>There are two ways to uncover your Values (1) what is your proudest moment at any point in your life and (2) what makes you upset.</b>. We’ll discover candidates from your proudest moments first, then road-test them.</p>
+    <p>There are two ways to uncover your Values (1) what is your proudest moment at any point in your life and (2) what makes you upset.</b> We’ll discover candidates from your proudest moments first, then road-test them.</p>
 
     <div class="block">
       <h3>Prompt A: Proud Moment</h3>
@@ -178,18 +178,18 @@ function renderValuesPromptsStep(){
     <div class="block">
       <h3>Prompt B: Upset / Anger / Frustrated Moment</h3>
       <div class="field">
-        <label>When were you most angry, frustrated, or furious (person or situation)?.</label>
+        <label>When were you most angry, frustrated, or furious (person or situation)?</label>
         <textarea id="upsetMoment" placeholder="Example: disrespected, lied to, treated unfairly, told what to do, ignored...">${escapeHtml(state.upsetMoment || "")}</textarea>
       </div>
       <div class="field">
-        <label>What exactly bothered you? (Why did the behavior bother you?)</label>
+        <label>What exactly bothered you / Why did the behavior bother you?</label>
         <textarea id="upsetWhy" placeholder="The 'why' reveals your Values when crossed.">${escapeHtml(state.upsetWhy || "")}</textarea>
       </div>
     </div>
 
     <div class="block">
       <h3>Build your candidate list (fast)</h3>
-      <p class="muted">Pick a few from the list OR add custom ones. We’ll road-test next step.</p>
+      <p class="muted">Pick a few from the list OR add custom ones. We’ll road-test on the next step.</p>
       <div class="pills" id="valuePills"></div>
 
       <div class="field">
@@ -263,14 +263,14 @@ function renderValuesRoadTestStep(){
       <h3>Instructions</h3>
       <div class="kv">
         • <b>YES</b> = it’s a Value (keep)<br/>
-        • <b>NO</b> = it’s not a Value → move it to “Pillar candidates” (trait/strength)
+        • <b>NO</b> = it’s not a Value.
       </div>
     </div>
 
     <div class="block">
       <h3>Road test each candidate. Values, when crossed, evoke an emotion. Example: you can have high integrity, but not get bothered if others do not have that quality. Integrity would not be considered a Value)</h3>
       <div id="roadList"></div>
-      <div class="help">Tip: imagine someone close to you blatantly crossing your Value.</div>
+      <div class="help">Tip: imagine someone you wotl with / live with blatantly crossing your Values.</div>
     </div>
 
     <div class="block">
@@ -379,7 +379,7 @@ function renderPillarsStep(){
 
   wrap.innerHTML = `
     <h2>Pillars (Discover)</h2>
-    <p>Are positive core characteristics that describe you as your best (they are not tied to accomplishment or how you think you "should be"). You can find them by recalling any time in your life when you just felt so "you," when time melted away, and you felt freedom from judgment (self or others)<b>/p>
+    <p>Are positive core characteristics that describe you as your best (they are not tied to accomplishment or how you think you "should be"). </br> You can find them by recalling any time in your life when you just felt so "you," when time melted away, and you felt freedom from judgment (self or others)<b>/p>
 
     <div class="block">
       <h3>Prompt: Happiest / Best Self</h3>
