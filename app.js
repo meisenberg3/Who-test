@@ -30,18 +30,19 @@ const DEFAULTS = {
 };
 
 const VALUE_OPTIONS = [
-  "Respect","Excellence","Justice","Transparency","Honesty","Empathy","Adventure","Curiosity",
-  "Kind","Independence","Integrity","Structure","Self Reliance","Resilience","Impact","Service",
-  "Authenticity","Fairness","Accountability","Reliability","Loyalty","Inclusivity","Do-er", 
-  "Considerate","Perseverance","Open Mind","Efficient","Gratitude","Ethics" 
+  "Accountability","Adventure","Authenticity","Considerate","Curiosity","Do-er","Efficient","Empathy","Ethics",
+  "Excellence","Fairness","Gratitude","Honesty","Impact","Independence","Inclusivity","Integrity","Justice","Kind",
+  "Loyalty","Open Mind","Perseverance","Reliability","Resilience","Respect","Self Reliance","Service","Structure","Transparency"
 ];
 
 
 const PILLAR_OPTIONS = [
-  "Community","Connection","Builder","Problem Solver","Peace","Laughter","Fun","Creative",
-  "Kind","Goofy","Nerdy","Caretaker","Adventurer","Love","Impact","Service","Earthy",
-  "Optimist","Compassion","Passion","Humor","Sarcastic","Faith","Helper","Bold", 
-  "Considerate","Present","Open Mind","Listener","Gratitude","Patient","Confident" 
+[
+  "Adventurer","Bold","Builder","Caretaker","Community","Compassion","Confident","Connection",
+  "Considerate","Creative","Earthy","Faith","Fun","Goofy","Gratitude","Helper","Humor","Impact",
+  "Kind","Laughter","Listener","Love","Nerdy","Open Mind","Optimist","Passion","Patient","Peace",
+  "Present","Problem Solver","Sarcastic","Service"
+]
 ];
 
 
