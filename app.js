@@ -379,7 +379,7 @@ function renderPillarsStep(){
 
   wrap.innerHTML = `
     <h2>Pillars (Discover)</h2>
-    <p>Are positive core characteristics that describe you as your best (they are not tied to accomplishment or how you think you "should be"). </br> You can find them by recalling any time in your life when you just felt so "you," when time melted away, and you felt freedom from judgment (self or others)<b>/p>
+    <p>Are positive core characteristics that describe you as your best (they are not tied to accomplishment or how you think you "should be"). </br> You can find them by recalling any time in your life when you just felt so "you," when time melted away, and you felt freedom from judgment (self or others)</br>
 
     <div class="block">
       <h3>Prompt: Happiest / Best Self</h3>
