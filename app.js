@@ -387,65 +387,7 @@ function renderPillarsStep(){
         <label>When were you your happiest and most YOU? (Where / with who / doing what?)</label>
         <textarea id="happiestMoment" placeholder="Example: on vacation, with friends, reading, building something, outdoors...">${escapeHtml(state.happiestMoment || "")}</textarea>
       </div>
-      
-wrap.innerHTML = `
-  <h2>Pillars (Discover)</h2>
-  <p>
-    Positive core characteristics that describe you as your best self.
-  </p>
-
-  <div class="block">
-    <h3>Prompt: Happiest / Best Self</h3>
-    <div class="field">
-      <label>When were you your happiest and most YOU?</label>
-      <textarea id="happiestMoment">${escapeHtml(state.happiestMoment || "")}</textarea>
-    </div>
-  </div>
-
-  <div class="block">
-    <h3>Build your Pillar candidate list (fast)</h3>
-    <p class="muted">Pick a few from the list OR add custom ones.</p>
-    <div class="pills" id="pillarPills"></div>
-  </div>
-
-  <div class="block">
-    <h3>Add Pillar candidates</h3>
-    <div class="field">
-      <label>Add a trait (press Enter)</label>
-      <input id="customPillarTrait" type="text" />
-    </div>
-
-    <div class="field">
-      <label>Current Pillar candidates</label>
-      <div id="pillarList" class="kv"></div>
-    </div>
-  </div>
-
-  <div class="block">
-    <h3>Pillar Road Test</h3>
-    <div id="pillarRoad"></div>
-  </div>
-
-  <div class="block">
-    <h3>Live results</h3>
-    <div class="grid">
-      <div class="block">
-        <h3>Confirmed Pillars</h3>
-        <div id="pillarsFinal" class="kv"></div>
-      </div>
-      <div class="block">
-        <h3>Moved to Values</h3>
-        <div id="movedToValues" class="kv"></div>
-      </div>
-    </div>
-  </div>
-`;
-
-
-
-
-
-     
+        
       <div class="help">Now list 3–6 characteristics that describe you in that "best moment" state.</div>
     </div>
 
@@ -484,26 +426,6 @@ wrap.innerHTML = `
   `;
 
   stepHost.appendChild(wrap);
-
-// ensure array exists
-state.pillarCandidates = Array.isArray(state.pillarCandidates)
-  ? state.pillarCandidates
-  : [];
-
-// render Pillar option pills
-const pillarPills = wrap.querySelector("#pillarPills");
-
-PILLAR_OPTIONS.forEach(p =>
-  pillarPills.appendChild(
-    makePill(p, state.pillarCandidates, 12)
-  )
-);
-
-
-
-
-
-
   
   const happiestMoment = wrap.querySelector("#happiestMoment");
   happiestMoment.addEventListener("input", () => {
