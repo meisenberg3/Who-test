@@ -17,24 +17,30 @@ const DEFAULTS = {
 };
 
 const VALUE_OPTIONS = [
-  "Health","Freedom","Growth","Family","Friendship","Love","Discipline","Adventure","Curiosity",
-  "Creativity","Faith","Integrity","Mastery","Stability","Wealth","Impact","Service","Leadership",
-  "Peace","Joy","Authenticity","Courage","Excellence","Humor"
+  "Accountability","Adventure","Authenticity","Considerate","Curiosity","Do-er","Efficient","Empathy","Ethics",
+  "Excellence","Fairness","Gratitude","Honesty","Impact","Independence","Inclusivity","Integrity","Justice","Kind",
+  "Loyalty","Open Mind","Perseverance","Reliability","Resilience","Respect","Self Reliance","Service","Structure","Transparency"
+ 
 ];
 
 const PILLAR_OPTIONS = [
-  "Body","Mind","Relationships","Work/Craft","Money","Faith/Spirit","Home/Environment","Fun/Play",
-  "Learning","Community","Routine","Adventure"
+  "Adventurer","Bold","Builder","Caretaker","Community","Compassion","Confident","Connection","Connector",
+  "Considerate","Creative","Earthy","Explorer","Faith","Family","Fierce","Fun","Goofy","Grounded","Gratitude","Helper","Humor","Introspective","Impact",
+  "Kind","Laughter","Limitless","Listener","Love","Nerdy","Open Mind","Optimist","Passion","Patient","Peace","Playful",
+  "Present","Problem Solver","Sarcastic","Service"
+
 ];
 
 const EMOTION_OPTIONS = [
-  "Calm","Confident","Focused","Free","Grateful","Grounded","Happy","Hopeful",
-  "Loved","Motivated","Peaceful","Powerful","Present","Proud","Safe","Strong"
-];
+  "Calm","Carefree","Clear","Connected","Content","Energized","Fulfilled","Freedom",
+  "Grateful","Gratitude","Happiness","Inspired","Joy","Peace","Playful",
+  "Present","Serenity"
+ ];
 
 const TRIGGER_OPTIONS = [
-  "Criticism","Rejection","Being ignored","Feeling rushed","Uncertainty","Conflict",
-  "Feeling judged","Mess/chaos","Lack of control","Feeling disrespected"
+  "I'n not...","Capable","Enough","Fast Enough","Good Enough","Heard","Listened to",
+  "Respected","Seen","Smart","Valued","Wanted"
+  
 ];
 
 let state = loadState();
@@ -83,40 +89,40 @@ const steps = [
   {
     id: "values",
     title: "Page 1 — Define your Values",
-    hint: "Tap to select your values. Keep it simple: pick 5–10 that actually matter to you.",
+    hint: "Tap to select your values. Keep it simple: pick 4–6 that, when crossed, evokes an emotion.",
     render: () => renderMultiSelect({
       key: "values",
       options: VALUE_OPTIONS,
       allowCustom: true,
       customLabel: "Add your own value",
-      maxHint: "If you pick too many, the tool stops being useful.",
+      maxHint: "Reflect on what matters to you, the non-negotiable rules that drive you.",
     }),
     validate: () => (state.values.length >= 3) || "Pick at least 3 values.",
   },
   {
     id: "pillars",
     title: "Page 2 — Define your Pillars",
-    hint: "Pillars are the life buckets you lean on when you want to be your best self.",
+    hint: "Pillars are characteristics that describe who you are as your happiest, most relaxed self.",
     render: () => renderMultiSelect({
       key: "pillars",
       options: PILLAR_OPTIONS,
       allowCustom: true,
-      customLabel: "List your pillars (your own words)",
-      maxHint: "Pick 4–8 if you can.",
+      customLabel: "List words that describe you. Without those characteristics, you would operate as a shell of yourself (your own words)",
+      maxHint: "Pick 4–6 if you can.",
     }),
     validate: () => (state.pillars.length >= 2) || "Pick at least 2 pillars.",
   },
   {
     id: "emotion",
     title: "Page 3 — Define your Ideal Emotion",
-    hint: "How do you want to feel most of the time? You can choose one from the bank or write your own.",
+    hint: "At the end of the day, how would you like to feel (yes, it is ok to have 2 Ideal Emotions)? You can choose one from the bank or write your own.",
     render: renderIdealEmotion,
     validate: () => (String(state.idealEmotion || "").trim().length > 1) || "Choose or write your ideal emotion.",
   },
   {
     id: "triggers",
     title: "Page 4 — Triggers → Responses",
-    hint: "List triggers that set you off — and the response you’d rather choose instead.",
+    hint: "the demoralizing inner critic telling you "I'm not .... enough" — and the response you’d rather choose instead.",
     render: renderTriggers,
     validate: validateTriggers,
   },
