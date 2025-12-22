@@ -258,7 +258,7 @@ function renderValuesRoadTestStep(){
 
   wrap.innerHTML = `
     <h2>Values (Road Test)</h2>
-    <p>Road test rule: <b>If someone crosses your Value, does it evoke anger / frustration / upset?</b></p>
+    <p>Road test rule: <b>In your personal or professinal life, crosses your Value, does it evoke anger / frustration / upset?</b></p>
 
     <div class="block">
       <h3>Instructions</h3>
@@ -269,10 +269,8 @@ function renderValuesRoadTestStep(){
     </div>
 
     <div class="block">
-      <h3>Road test each candidate. Values, when crossed, evoke an emotion. Example: you can have high integrity, but not get bothered if others do not have that quality. Integrity would not be considered a Value)</h3>
+      <h3><b>Road test each candidate.</b> Values, when crossed, evoke an emotion. Example: you can have high integrity, but not get bothered if others do not have that quality. Integrity would not be considered a Value)</h3>
       <div id="roadList"></div>
-      <div class="help">Tip: imagine someone you work with / live with blatantly crossing your Values.</div>
-    </div>
 
     <div class="block">
       <h3>Live results</h3>
@@ -615,9 +613,7 @@ function renderTriggerStep(){
       <div class="field">
         <label>When the Trigger thought shows up, what will I do to shift my mindset to focus on the Pillar words? (simple plan)</label>
         <textarea id="triggerPlan" placeholder="Example: Pause 10 seconds → pick 1 pillar → act for 2 minutes.">${escapeHtml(state.triggerPlan || "")}</textarea>
-        <div class="help">Make it stupid-simple. You’re designing for your worst moment.</div>
-      </div>
-    </div>
+       </div>
 
     <div class="block">
       <h3>Optional: One-line reset script</h3>
