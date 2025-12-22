@@ -387,6 +387,28 @@ function renderPillarsStep(){
         <label>When were you your happiest and most YOU? (Where / with who / doing what?)</label>
         <textarea id="happiestMoment" placeholder="Example: on vacation, with friends, reading, building something, outdoors...">${escapeHtml(state.happiestMoment || "")}</textarea>
       </div>
+      
+<div class="block">
+  <h3>Build your Pillar candidate list (fast)</h3>
+  <p class="muted">Pick a few from the list OR add custom ones.</p>
+  <div class="pills" id="pillarPills"></div>
+</div>
+  
+// ensure array exists
+state.pillarCandidates = Array.isArray(state.pillarCandidates)
+  ? state.pillarCandidates
+  : [];
+
+// render Pillar option pills
+const pillarPills = wrap.querySelector("#pillarPills");
+
+PILLAR_OPTIONS.forEach(p =>
+  pillarPills.appendChild(
+    makePill(p, state.pillarCandidates, 12) // max 12 like values
+  )
+);
+
+     
       <div class="help">Now list 3–6 characteristics that describe you in that "best moment" state.</div>
     </div>
 
