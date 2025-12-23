@@ -118,7 +118,7 @@ const steps = [
   {
     id: "triggers",
     title: "Page 4 — Triggers → Responses",
-    hint: "the demoralizing inner critic telling you "I'm not .... enough" — and the response you’d rather choose instead.",
+    hint: "The demoralizing inner critic telling you \"I'm not … enough\" — and the response you’d rather choose instead.",
 
     render: renderTriggers,
     validate: validateTriggers,
