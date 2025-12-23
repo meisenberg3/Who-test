@@ -52,6 +52,16 @@ const elProgress = document.getElementById("progressFill");
 
 const elSite = document.getElementById("siteLink");
 const elBook = document.getElementById("bookLink");
+
+console.log(
+  elTitle, elHint, elBody,
+  elBack, elNext, elSave,
+  elProgress, elSite, elBook,
+  elFontDown, elFontUp, elFontSlider
+);
+
+
+
 elSite.href = MAIN_SITE;
 elBook.href = BOOK_LINK;
 
