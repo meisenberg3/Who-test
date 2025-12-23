@@ -1,6 +1,6 @@
 const STORAGE_KEY = "who_assessment_v2";
 const MAIN_SITE = "http://MyWHOthoughts.com";
-const BOOK_LINK = "http://bit.ly/3PLIYG9";
+const BOOK_LINK = "https://bit.ly/3PxJ3MD";
 
 const DEFAULTS = {
   meta: { name: "", email: "" },
