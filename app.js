@@ -31,12 +31,11 @@ const PILLAR_OPTIONS = [
 
 const EMOTION_OPTIONS = [
   "Calm","Carefree","Clear","Connected","Content","Energized","Fulfilled","Freedom",
-  "Grateful","Gratitude","Happiness","Inspired","Joy","Peace","Playful",
-  "Present","Serenity"
+  "Grateful","Happiness","Inspired","Joy","Peace","Playful","Present","Serenity"
  ];
 
 const TRIGGER_OPTIONS = [
-  "I'n not...","Capable","Enough","Fast Enough","Good Enough","Heard","Listened to",
+  "I’m not…","Capable","Enough","Fast Enough","Good Enough","Heard","Listened to",
   "Respected","Seen","Smart","Valued","Wanted"
   ];
 
@@ -119,7 +118,7 @@ const steps = [
   {
     id: "triggers",
     title: "Page 4 — Triggers → Responses",
-    hint: "the demoralizing inner critic telling you "I'm not .... enough" — and the response you’d rather choose instead.",
+    hint: "hint: "The demoralizing inner critic telling you \I'm not … enough\ — and the response you’d rather choose instead.",
     render: renderTriggers,
     validate: validateTriggers,
   },
