@@ -53,15 +53,6 @@ const elProgress = document.getElementById("progressBar");
 const elSite = document.getElementById("siteLink");
 const elBook = document.getElementById("bookLink");
 
-console.log(
-  elTitle, elHint, elBody,
-  elBack, elNext, elSave,
-  elProgress, elSite, elBook,
-  elFontDown, elFontUp, elFontSlider
-);
-
-
-
 elSite.href = MAIN_SITE;
 elBook.href = BOOK_LINK;
 
@@ -69,6 +60,13 @@ elBook.href = BOOK_LINK;
 const elFontDown = document.getElementById("fontDown");
 const elFontUp = document.getElementById("fontUp");
 const elFontSlider = document.getElementById("fontSlider");
+
+console.log(
+  elTitle, elHint, elBody,
+  elBack, elNext, elSave,
+  elProgress, elSite, elBook,
+  elFontDown, elFontUp, elFontSlider
+);
 
 function applyFontScale(scale){
   const clamped = Math.max(0.9, Math.min(1.3, Number(scale)));
