@@ -74,7 +74,8 @@ function applyFontScale(scale){
   state.fontScale = clamped;
   elFontSlider.value = String(clamped);
   saveState();
-},
+}
+
 elFontSlider.value = String(state.fontScale ?? 1);
 applyFontScale(state.fontScale ?? 1);
 
