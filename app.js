@@ -48,7 +48,7 @@ const elBody = document.getElementById("stepBody");
 const elBack = document.getElementById("backBtn");
 const elNext = document.getElementById("nextBtn");
 const elSave = document.getElementById("saveBtn");
-const elProgress = document.getElementById("progressFill");
+const elProgress = document.getElementById("progressBar");
 
 const elSite = document.getElementById("siteLink");
 const elBook = document.getElementById("bookLink");
